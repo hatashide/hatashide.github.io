@@ -1,163 +1,107 @@
 * {
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.title {
-  background: linear-gradient(-45deg, black, grey);
+.container {
+    margin: 0 20px;
 }
 
 h1 {
-  font-size: 48px;
-  text-align: center;
-  font-style: normal;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  letter-spacing: 10px;
-  word-spacing: 15px;
+    text-align: center;
+    margin: 15px 0;
 }
 
-h3 {
-  font-size: 28px;
-  text-align: left;
-  margin-left: 50px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+main {
+    display: flex;
+    justify-content: space-between;
 }
 
-h4 {
-  font-size: 20px;
-  text-align: left;
-  margin-left: 40px;
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
 }
 
-h2 {
-  font-size: 20px;
-  text-align: right;
-  font-style: normal;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  letter-spacing: 0px;
-  word-spacing: 20px;
-  color: rgb(114, 110, 110);
+input {
+    display: block;
+    height: 30px;
 }
 
-.empty {
-  width: 300px;
-  height: 300px;
-  background-image: url(/photo_2023-03-22_08-09-03.jpg);
-  background-repeat: round;
+input:not(:last-child) {
+    margin-bottom: 10px;
 }
 
-.empty2 {
-  width: 650px;
-  height: 300px;
-  background-color: grey;
+.btn:active {
+    transform: scale(0.89);
 }
 
-.bio {
-  background-color: grey;
+.btn {
+    background: none;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
 }
 
-#galery,
-#price {
-  margin: 0px;
-  padding: 0px;
-  background-color: gray;
-  border: 3px solid grey;
-  font-size: 20px;
-  text-align: center;
-  font-style: normal;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  letter-spacing: 10px;
-  word-spacing: 15px;
-  font-weight: bold;
+.add {
+    outline: 1px solid green;
+    margin-bottom: 10px;
 }
 
-table {
-  position: relative;
-  align-items: center;
-  background-color: grey;
+.clear {
+    outline: 1px solid red;
+    width: 50vw;
 }
 
-#one {
-  width: 650px;
-  height: 400px;
-  background-image: url(/article-vidy-sovremennyh-tancev2.jpg);
-  background-repeat: round;
+.mainUsers,
+.users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#two {
-  width: 650px;
-  height: 400px;
-  background-image: url(/b86fd541285aa88d24f20ec31765923fbd33285e.jpg);
-  background-repeat: round;
+.users,
+.user {
+    width: 40vw;
 }
 
-#three {
-  width: 650px;
-  height: 400px;
-  background-image: url(/contemporary_site.jpg);
-  background-repeat: round;
+.user {
+    background-color: #f5f1f1;
+    margin-bottom: 10px;
 }
 
-#four {
-  width: 650px;
-  height: 400px;
-  background-image: url(/ee233b1fdaa34581b49ec6d332540f9c.jpg);
-  background-repeat: round;
+.user-outer {
+    display: flex;
+    justify-content: space-between;
 }
 
-#five {
-  width: 650px;
-  height: 400px;
-  background-image: url(/group-men-women-dancing-hip-hop-choreography-800x554.jpg);
-  background-repeat: round;
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#six {
-  width: 650px;
-  height: 400px;
-  background-image: url(/sovr-tanc-podr.jpg);
-  background-repeat: round;
+.delete,
+.change {
+    border: none;
+    height: 40%;
+    color: white;
+    padding: 0 10px;
+    border-radius: 10px;
 }
 
-#seven {
-  width: 650px;
-  height: 400px;
-  background-image: url(/sovremennij-tanec-1.jpg);
-  background-repeat: round;
+.delete {
+    background: red;
 }
 
-#eight {
-  width: 650px;
-  height: 400px;
-  background-image: url(/vidy-sovremennyh-tancev1.jpg);
-  background-repeat: round;
+.change {
+    background: green;
 }
 
-#nine {
-  width: 650px;
-  height: 400px;
-  background-image: url(/wide_detail_picture.jpg);
-  background-repeat: round;
-}
-
-p {
-  font-size: 16px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-button {
-  background-color: white;
-  border-radius: 40px;
-  font-size: 20px;
-  border: 1px solid grey;
-}
-
-footer {
-  text-align: right;
-  font-size: smaller;
-}
-
-footer:hover {
-  color: grey;
-  font-size: medium;
+.delete:active,
+.change:active {
+    transform: scale(0.85);
 }

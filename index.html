@@ -1,105 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <div class="title">
-      <h1>Виктор Пак</h1>
-      <h2>
-        <a href="#biography">Биография</a> <a href="#galery">Галерея</a>
-        <a href="#price">Услуги</a> Отзывы Контакты
-      </h2>
-    </div>
 
-    <table>
-      <tr>
-        <td class="empty"></td>
-        <td class="bio">
-          <h3 id="biography">Привет!</h3>
-          <h4>Меня зовут Витя!</h4>
-          Я - танцор-преподаватель, специализирующийся на направлении
-          coverdance, которое подразумевает танцевальные интерпретации
-          популярных хитов других исполнителей. Мой опыт в этой области
-          сформировал уникальное видение танцевальных композиций, которым я с
-          удовольствием делюсь на занятиях. <br />
-          <br />
-          Изучая различные стили музыки и танцев, я создаю уникальные
-          хореографии, которые отличаются оригинальностью и эмоциональным
-          зарядом. А уроки coverdance не только помогают ученикам улучшить
-          технику исполнения, но и поддерживают творческое развитие и
-          вдохновляют на самовыражение через движение. Благодаря своей страсти к
-          танцам и профессионализму, я стал уже давно являюсь востребованным
-          преподавателем в области coverdance. <br />
-          <br />
-          Мои уроки привлекают как начинающих танцоров, так и опытных
-          профессионалов, желающих усовершенствовать свои навыки, ведь я не
-          только делюсь своими знаниями, но и вдохновляю своих учеников к
-          творческому самовыражению и достижению новых творческих высот в мире
-          coverdance.
-        </td>
-      </tr>
-    </table>
+<head>
+    <meta charset="UTF-8">
+    <link href="./css/index.css" rel="stylesheet">
+    <script defer src="index.js"></script>
+    <title>Elbrus Super Form</title>
+</head>
 
-    <div id="galery">Фотокарточки</div>
+<body>
+<div class="container">
+    <h1 class="mainHeading">Elbrus Super Form</h1>
+    <main>
+        <div class="form">
+            <form>
+                <label for="name">Name</label>
+                <input class="name" id="name" type="text">
 
-    <!--На самом деле я пока ещё не препод и не хореограф, поэтому фоток у меня нет. Вставлю чужие-->
-    <table>
-      <tr>
-        <td id="one"></td>
-        <td id="two"></td>
-        <td id="three"></td>
-      </tr>
-      <tr>
-        <td id="four"></td>
-        <td id="five"></td>
-        <td id="six"></td>
-      </tr>
-      <tr>
-        <td id="seven"></td>
-        <td id="eight"></td>
-        <td id="nine"></td>
-      </tr>
-    </table>
+                <label for="secondName">Second name</label>
+                <input class="secondName" id="secondName" type="text">
 
-    <div id="price">Услуги</div>
+                <label for="email">Email</label>
+                <input class="email" id="email" type="email">
 
-    <table>
-      <tr>
-        <td class="empty2"></td>
-        <td>
-          <h3>Авторская хореография</h3>
-          <p>hip-hop</p>
-          <br />
-          <p>popping</p>
-          <br />
-          <p>k-pop</p>
-          <br />
-          <hr />
-          <p>Стоимость: 3000р / час</p>
-          <button>Записаться</button>
-        </td>
-        <td>
-          <h3>Сoverdance хореография</h3>
-          <p>boys cover</p>
-          <br />
-          <p>girls cover</p>
-          <br />
-          <p>solo cover</p>
-          <br />
-          <hr />
-          <p>Стоимость: 2000р / час</p>
-          <button>Записаться</button>
-        </td>
-        <td class="empty2"></td>
-      </tr>
-    </table>
+                <button class="btn add">Отправить</button>
+            </form>
+            <button class="btn clear">Очистить localStorage</button>
+        </div>
 
-    <footer>© 2024.</footer>
-    <!--Жестко не успеваю, поэтому сдаю так, там по навигации ещё осталось немного, но в целом визитка более менее готова!-->
-  </body>
+        <div class="mainUsers">
+            <h3>Users:</h3>
+            <div class="users"></div>
+        </div>
+    </main>
+
+</div>
+</body>
+
 </html>
